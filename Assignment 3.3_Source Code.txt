@@ -1,0 +1,10 @@
+# Assignement 3.3 : Implement a function longestWord() that takes a list of words and returns the longest one.
+
+
+def longestWord(list_of_words):
+    word_length = []
+    for i in list_of_words:
+        word_length.append((len(i),i))
+    word_length.sort()
+    return word_length[-1][1]
+print(longestWord(["routine","Americans","daily","out","exclamation"]))
